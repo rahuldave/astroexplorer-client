@@ -1,0 +1,20 @@
+*.tmproj
+*.tmproject
+tmtags
+*~
+\#*\#
+.*.sw[a-z]
+*.un
+.DS_Store
+Icon?
+
+# Thumbnails
+._*
+
+node_modules/*
+dump.rdb
+
+# for tablesorter in particular
+.svn
+*.zip
+

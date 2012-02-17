@@ -1,0 +1,9 @@
+[submodule "static/ajax-solr/ajax-solr"]
+	path = static/ajax-solr/ajax-solr
+	url = git@github.com:rahuldave/ajax-solr.git
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twitter/bootstrap.git
+[submodule "backbone"]
+	path = backbone
+	url = https://github.com/documentcloud/backbone.git

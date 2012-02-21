@@ -1,0 +1,371 @@
+
+
+.saved {
+   border-top: 1px solid black; 
+   border-left: 1px solid black; 
+   border-right: 1px solid black;      
+}
+
+.tab a {
+   color:#B4241B;
+   font-weight:100;
+   font-size: 15px;    
+}
+
+a {
+  color: #6998f0;
+  text-decoration: none;
+}
+
+.fluid-content a.savelink {
+    color: #333;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #FAF8CC;
+    border-radius: 10px;
+}
+
+.fluid-content a.deletelink {
+    color: #333;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: grey; /* #FAF8CC; */
+    border-radius: 10px;
+}
+
+.fluid-content a.save {
+    color: #333;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #FAF8CC;
+    border-radius: 10px;
+}
+
+.fluid-content a.delete {
+    color: #333;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: grey; /* #FAF8CC; */
+    border-radius: 10px;
+}
+
+.fluid-content a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/*
+a.go {
+    font-size: 16px;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+*/
+
+/* right */
+
+.right {
+  /*float: right;
+  width: 538px;*/
+  /*padding: 10px 20px 10px 40px;*/
+  /*border-left: 1px solid #aaa;*/
+  text-align: justify;
+  /*float:right;*/
+  
+}
+.right h5 {
+  margin-top: 10px;
+  color: #B4241B;
+  line-height:18px;
+  font-weight: normal;
+  /*font-size: 15px;
+  padding: 15px 0 5px 0;
+  letter-spacing: -2px;*/
+}
+.right p {
+    margin-bottom:2px;
+}
+.full h1  {
+  padding: 2px 0 2px 0;
+  color: #B4241B;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+  /*letter-spacing: -2px;*/
+}
+
+.full h2  {
+  padding: 15px 0 15px 0;
+  color: #B4241B;
+  font-size: 15px;
+  font-weight: 100;
+  /*letter-spacing: -2px;*/
+}
+
+#result a {
+  margin-right: 5px;
+}
+#navigation {
+  border-bottom: 1px solid #000;
+}
+#pager,
+#pager-header,
+#other-header {
+  display: inline;
+}
+#pager li,
+.links li {
+  list-style-type: none;
+  display: inline;
+}
+#selection {
+  padding: 10px 15px 0;
+}
+#selection li {
+  list-style-type: none;
+}
+#docs {
+  padding-top: 1px;
+}
+
+.full {
+  float: center; 
+  padding: 20px 20px 20px 20px;
+}
+
+.searchbox {
+  text-align: center;
+  float: center;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #aaa;
+}
+/* left */
+
+.left {
+  float: left;
+  width: 390px;
+  padding: 0 0 10px 10px;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+/*
+.well {
+    padding:-20px;
+}*/
+.well {
+  height:100%;
+}
+.well h3 {
+  clear: left;
+  /*padding-top: 20px;*/
+  color: #B4241B;
+  font-size: 15px;
+  border-bottom: 1px solid #aaa;
+}
+.well h5 {
+  clear: left;
+  padding-top: 20px;
+/*  border-top: 1px solid #aaa;*/
+  color: #333;
+  font-size: 13px;
+}
+#search input {
+  width: 250px;
+}
+#calendar {
+  width: 160px;
+}
+#search_help {
+  font-size: 80%;
+}
+
+#searchbig input {
+    width: 350px;
+    font-size: 18px;
+    border: 1px solid #aaa;
+}
+
+#search_help_big {
+    font-size: 15px;
+}
+.tagcloud {
+  padding: 10px 15px 0;
+}
+.tagcloud_item {
+  float: left;
+  display: block;
+  margin-right: 4px;
+  color: #6998f0;
+}
+.tagcloud_item:hover {
+  color: #f00;
+}
+
+/* tagcloud */
+
+.tagcloud_size_0 {
+font-size: 90%;
+}
+.tagcloud_size_1 {
+font-size: 95%;
+}
+.tagcloud_size_2 {
+font-size: 100%;
+}
+.tagcloud_size_3 {
+font-size: 105%;
+}
+.tagcloud_size_4 {
+font-size: 110%;
+}
+.tagcloud_size_5 {
+font-size: 115%;
+}
+.tagcloud_size_6 {
+font-size: 120%;
+}
+.tagcloud_size_7 {
+font-size: 125%
+}
+.tagcloud_size_8 {
+font-size: 135%;
+}
+.tagcloud_size_9 {
+font-size: 140%;
+}
+.tagcloud_size_10 {
+font-size: 145%;
+}
+
+/*
+ * How should information within each paper be styled?
+ *
+ * One common change is to override the justification; perhaps
+ * text-align:justify should only be applied to the abstract?
+ */
+
+p.links {
+    text-align: left;
+}
+
+span.pubitem {
+    font-weight: bolder;
+    /*font-size: larger;*/
+}
+
+div.extrapaperinfo {
+    display: none;
+}
+
+div.objectdataarea {
+    text-align: left;
+}
+
+div.missiondataarea {
+    // padding-left: 2em;
+    text-align: left;
+}
+
+div.missiondata {
+    padding-left: 2em;
+}
+
+span.missionname {
+    position: relative;
+    left: -1em;
+}
+
+div.saved-items {
+    padding-bottom: 1em;
+}
+
+div.saved-items h1 {
+    position: relative;
+    left: -1em;
+}
+
+div.saved-items form {
+    padding-top: 1em;
+}
+
+/*
+ * Styling of facets
+ */
+
+span.rangevalues {
+    color: #f6931f;
+    font-weight: bold;
+}
+
+/*
+ * This is for testing; I think it is probably confusing for the user
+ */
+span.facetvalue:nth-child(odd) {
+    background: #EDEBEC;
+}
+
+/* override the CSS from jquery.autocomplete to remove indicator.gif */
+
+.ac_loading { 
+    background: white; 
+}
+
+/*overriding bootstrap
+.fluid-sidebar {
+  float: left;
+  width: 380px;
+}
+.fluid-container > .fluid-content {
+  margin-left: 400px;
+}
+*/
+
+
+a.sorter {
+    font-weight:bold;
+}
+.navbar-top div > ul a.isurround, .nav a.isurround {
+    padding: 0;
+}
+.navbar-top div > ul a.isurround img, .nav a.isurround img{
+    height: 36;
+}
+span.spanner {
+    padding:1px;
+    border: 1px solid black;
+}
+
+a:hover {
+ cursor:pointer;
+}
+
+ol.normal li{
+    color:#404040;
+}
+
+.navbar-fixed-top .brand {
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+
+.btn-mini {
+  padding: 1px 4px;
+  font-size: 11px;
+  line-height: 16px;
+}
+.btn-mini .icon {
+  margin-top: -1px;
+}

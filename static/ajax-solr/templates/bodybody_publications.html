@@ -1,0 +1,141 @@
+<div class="row-fluid"> 
+<div class="span4"> 
+<div class="well">
+
+  <div>
+  <h3>Current Selection</h3> 
+  <ul id="selection"></ul>
+  <a id="thrower" class="label label-success" style="display:none">Continue in Observations</a>
+  <!--div id="metricsthrowerdiv" style="display:none"><iframe id="metricsthroweriframe"></iframe></div-->
+  <a id="metricsthrower" class="label label-success" style="display:none">METRICS</a>
+  <span id="numpubs"></span>
+  <h5>Search</h5> 
+  <span id="search_help">(press ESC to close suggestions)</span> 
+  <ul id="search"> 
+    <input type="text" id="query" name="query"/> 
+  </ul> 
+  </div>
+  <div class="clear"></div> 
+  <br/>
+  <br/>
+ 
+  <div>
+  <h3>Publication Facets</h3>
+
+  <h5>Top Keywords</h5>
+  <div class="tagcloud" id="keywords"></div> 
+
+
+  <h5>Top Authors</h5> 
+  <div class="tagcloud" id="author"></div>
+
+
+  <h5>Missions</h5> 
+  <div class="tagcloud" id="missions"></div>
+
+  <!-- Taken out by Doug
+  <h5>Paper Types</h5> 
+  <div class="tagcloud" id="papertype"></div>
+  -->
+
+  <h5>Year of Publication</h5>
+  <br/>
+  <div id="pubyeardiv" class="nocollapse">
+  <div id="pubyear"></div>
+  <span id="pubyear_amount" class="rangevalues"></span>
+  </div>
+
+  </div>
+
+  <div class="clear"></div> 
+  <br/>
+  <br/>
+    
+  <div>
+  <h3> Object Facets </h3>      
+  <h5>Object Types</h5> 
+  <div class="tagcloud" id="objecttypes"></div>
+  
+  <h5>Object Names&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#objectnames"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="objectnames"></div>
+   </div>
+
+  <div class="clear"></div> 
+  <br/>
+  <br/>
+
+  <div>
+  <h3>Observation Facets</h3>
+
+  
+  <h5>Observation Types&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#obsvtypes"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="obsvtypes"></div>
+  
+  <h5>Data Product Types</h5> 
+  <div class="tagcloud" id="datatypes"></div>
+  
+  <h5>Wavelengths</h5> 
+  <div class="tagcloud" id="emdomains"></div>
+  
+  <h5>Instruments&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#instruments"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="instruments"></div>
+  
+  <h5>Targets&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#targets"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="targets"></div>
+  
+  <h5>RA&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#radiv"><span class="caret"></span></button></h5>
+  <br/>
+  <div id="radiv" class="collapse">
+  <div id="ra"></div>
+  <span id="ra_amount" class="rangevalues"></span>
+  </div>
+
+  <h5>DEC&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#decdiv"><span class="caret"></span></button></h5>
+  <br/>
+  <div id="decdiv" class="collapse">
+  <div id="dec"></div>
+  <span id="dec_amount" class="rangevalues"></span>
+  </div>
+
+  <h5>When Observed?&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#obsvtimediv"><span class="caret"></span></button></h5>
+  <br/>
+  <div id="obsvtimediv" class="collapse">
+  <div id="obsvtime"></div>
+  <span id="obsvtime_amount" class="rangevalues"></span>
+  </div>
+
+  <h5>Exposure Time (ksec)&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#exptimediv"><span class="caret"></span></button></h5>
+  <br/>
+  <div id="exptimediv" class="collapse">
+  <div id="exptime"></div>
+  <span id="exptime_amount" class="rangevalues"></span>
+  </div>
+
+  <!--h5>Observation Ids</h5> 
+  <div class="tagcloud" id="obsids"></div-->
+  </div>
+
+  <div class="clear"></div> 
+  <br/>
+  <br/>
+
+  <div>
+  <h3>Proposal Facets</h3>
+  <h5>Proposal Types&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#proposaltype"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="proposaltype"></div>
+  
+  <h5>Proposal PIs&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#proposalpi"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="proposalpi"></div>
+  
+  <h5>Proposal Ids&nbsp;<button class="btn btn-mini btn-info" data-toggle="button collapse" data-target="#propids"><span class="caret"></span></button></h5> 
+  <div class="tagcloud collapse" id="propids"></div>
+  </div>
+
+  <div class="clear"></div> 
+  <br/>
+  <br/>
+  
+</div>
+</div>
+{{>bodyright}}
+</div>

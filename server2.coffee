@@ -13,7 +13,7 @@ fs = require 'fs'
 redis_client = require('redis').createClient()
 # RedisStore = require('connect-redis')(connect)
 
-requests = require "./requests"
+requests = require "./server/requests"
 completeRequest = requests.completeRequest
 failedRequest = requests.failedRequest
 successfulRequest = requests.successfulRequest
@@ -21,21 +21,22 @@ ifLoggedIn = requests.ifLoggedIn
 postHandler = requests.postHandler
 postHandlerWithJSON = requests.postHandlerWithJSON
 
-proxy = require "./proxy"
+proxy = require "./server/proxy"
 
-user = require "./user"
+user = require "./myads/user"
 loginUser = user.loginUser
 logoutUser = user.logoutUser
 getUser = user.getUser
 
 views = require "./views"
 
-saved = require "./saved"
-tags = require "./tags"
-groups = require "./groups"
-migration = require('./migration')
+saved = require "./myads/saved"
+tags = require "./myads/tags"
+groups = require "./myads/groups"
+migration = require('./myads/migration')
 
 config = require("./config").config
+console.log "config is: ", config
 SITEPREFIX = config.SITEPREFIX
 STATICPREFIX = config.STATICPREFIX
 

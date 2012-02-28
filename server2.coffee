@@ -33,7 +33,7 @@ views = require "./views"
 saved = require "./saved"
 tags = require "./tags"
 groups = require "./groups"
-migration = require('./migration2')
+migration = require('./migration')
 
 config = require("./config").config
 SITEPREFIX = config.SITEPREFIX

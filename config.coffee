@@ -12,6 +12,7 @@ configlocal =
   SITEPREFIX: sp
   STATICPREFIX: "#{sp}/static"
   TEMPLATEDIR: __dirname + '/static/ajax-solr/templates/'
+  PORT: 3010
 
 _.extend config, configlocal
 

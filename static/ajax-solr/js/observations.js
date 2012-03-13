@@ -46,15 +46,22 @@ var SOLRURL2 = SITEPREFIX + '/solr2/';
 		} else {
     		    $('#save-search').show();
     	}
-
-		$.getJSON(SITEPREFIX+'/savedsearches', function(data){
+		
+		if (ObservationsManager.store.values('fq').length == 0) {
+		    $('#save-search').hide();
+		} else {
+		    //console.log('FQVALS', ObservationsManager.store.values('fq'))
+		    $('#save-search').show();
+		}
+		$.getJSON(SITEPREFIX+'/savedsearches2', function(data){
 		    var thissearchurl='observations#'+location.href.split("#")[1];
 		    //console.log("THISSEARCHURL", thissearchurl);
 		    //alert(thissearchurl);
 		    if (data['savedsearches']!='undefined'){
-			    var savedsearcharray=data['savedsearches'];
+		        var savedsearcharray=data['savedsearches']['savedsearches'];
     			//console.log("SAVEDSEARCHARRAY", savedsearcharray);
-    			if (_.indexOf(savedsearcharray, thissearchurl)!=-1){
+			var searchurls=_.map(savedsearcharray, function(ob){return ob.searchuri;});
+    			if (_.indexOf(searchurls, thissearchurl)!=-1){
     			    console.log("ELE",thissearchurl);
     			    $('#save-search').hide();
     			    $('#delete-search').show();
@@ -67,12 +74,6 @@ var SOLRURL2 = SITEPREFIX + '/solr2/';
     			$('#save-search').hide();
     			$('#delete-search').hide();
     			// $('#get-data').hide(); currently usunsed
-		    }
-		    if (ObservationsManager.store.values('fq').length == 0) {
-		        $('#save-search').hide();
-		    } else {
-		        //console.log('FQVALS', ObservationsManager.store.values('fq'))
-		        $('#save-search').show();
 		    }
 		});
 

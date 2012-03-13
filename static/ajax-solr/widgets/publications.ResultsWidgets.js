@@ -312,12 +312,14 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
     //console.log("DOCIDS", docids);
     // Find out which papers have been saved so that we can change the 
     // Saved text/icon to delete.
-    $.getJSON(SITEPREFIX+'/savedpubs', function(data){
+    $.getJSON(SITEPREFIX+'/savedpubs2', function(data){
         if (data['savedpubs']!='undefined'){
-            var savedpubarray=data['savedpubs'];
+            var savedpubarray=data['savedpubs']['savedpubs'];
             //console.log("SAVEDPUBARRAY", savedpubarray);
+	    console.log('sob', savedpubarray, viewhash, docids);
+	    var pubids=_.map(savedpubarray, function(ob) { return ob.pubid});
             _.each(docids, function(ele){
-                if (_.indexOf(savedpubarray, ele)!=-1){
+                if (_.indexOf(pubids, ele)!=-1){
                     viewhash[ele].$('.savelink').hide();
                     viewhash[ele].$('.deletelink').show();
                 }

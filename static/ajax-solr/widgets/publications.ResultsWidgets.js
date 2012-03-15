@@ -209,7 +209,7 @@ PublicationView=Backbone.View.extend({
                'pubtitle':thedoc.title
         }), function(data){
                 console.log('data is', data);
-                if (data['SUCCESS']==='defined'){
+                if (data['status']==='SUCCESS'){
                     that.$('.savelink').hide();
                     that.$('.deletelink').show();
                 }

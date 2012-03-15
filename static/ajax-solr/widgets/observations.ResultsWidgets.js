@@ -161,7 +161,7 @@ function encodeObsuri(obsuri){
 			        'obsvtarget':thedoc.targets_s,
 			        'obsvtitle':thedoc.obsv_title
             }), function(data){
-                    if (data['SUCCESS']==='defined'){
+                    if (data['status']==='SUCCESS'){
                         that.$('.savelink').hide();
                         that.$('.deletelink').show();
                     }

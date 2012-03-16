@@ -117,7 +117,7 @@ var SOLRURL2 = SITEPREFIX + '/solr2/';
 	$('#save-search').click(function(){
 	    $.post(SITEPREFIX+'/savesearch', JSON.stringify({'savedsearch':'observations#'+location.href.split("#")[1]}), function(data){
 		//should we decode uri component above? We do it on server so perhaps not.
-		if (data['SUCCESS']==='defined'){
+		if (data['status']==='SUCCESS'){
 		    $('#save-search').hide();
 		    $('#delete-search').show();
 		}

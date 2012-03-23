@@ -175,7 +175,7 @@ function encodeObsuri(obsuri){
            $.post(SITEPREFIX+'/deleteobsv', JSON.stringify({
                 'obsvid':thedoc.obsids_s 
            }), function(data){
-                    if (data['SUCCESS']==='defined'){
+                    if (data['status']==='SUCCESS'){
                         that.$('.savelink').show();
                         that.$('.deletelink').hide();
                     }
@@ -304,7 +304,7 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
         if (data['savedobsvs']!='undefined'){
             var savedobsvarray=data['savedobsvs']['savedobsvs'];
 	    console.log('sob', savedobsvarray, viewhash, docids);
-	    var obsids=_.map(savedobsvarray, function(ob) { return ob.obsvid});
+	    var obsids=_.map(savedobsvarray, function(ob) { return ob.searchuri});
             _.each(docids, function(ele){
                 if (_.indexOf(obsids, ele)!=-1){
 		            //$('#saveobsv_'+ele).hide();

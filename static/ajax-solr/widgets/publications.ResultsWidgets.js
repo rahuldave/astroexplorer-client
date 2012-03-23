@@ -222,7 +222,7 @@ PublicationView=Backbone.View.extend({
        $.post(SITEPREFIX+'/deletepub', JSON.stringify({
            'pubid':thedoc.id 
        }), function(data){
-                if (data['SUCCESS']==='defined'){
+                if (data['status']==='SUCCESS'){
                     that.$('.savelink').show();
                     that.$('.deletelink').hide();
                 }
@@ -317,7 +317,7 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
             var savedpubarray=data['savedpubs']['savedpubs'];
             //console.log("SAVEDPUBARRAY", savedpubarray);
 	    console.log('sob', savedpubarray, viewhash, docids);
-	    var pubids=_.map(savedpubarray, function(ob) { return ob.pubid});
+	    var pubids=_.map(savedpubarray, function(ob) { return ob.searchuri});
             _.each(docids, function(ele){
                 if (_.indexOf(pubids, ele)!=-1){
                     viewhash[ele].$('.savelink').hide();
